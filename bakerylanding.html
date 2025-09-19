@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Treats Bakery</title>
+  <style>
+    body { font-family: Verdana, sans-serif; margin: 0; }
+    
+    header {
+      background: url("https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg") no-repeat center center/cover;
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* dark overlay */
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    section { padding: 40px; text-align: center; }
+
+    .services { display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap; }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      background: #fff;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card img { border-radius: 10px; margin-bottom: 10px; width: 100%; height: 200px; object-fit: cover; }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sweet Treats Bakery</h1>
+    <p>Freshly Baked Happiness Everyday</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg" alt="Cake">
+        <h3>Cakes</h3>
+        <p>Delicious custom cakes for every occasion.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg" alt="Pastry">
+        <h3>Pastries</h3>
+        <p>Fresh pastries made daily with love.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/2434/bread-food-healthy-breakfast.jpg" alt="Bread">
+        <h3>Bread</h3>
+        <p>Soft and fresh bread straight from the oven.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact us: sweetbakery@email.com | Call: 123-456-789</p>
+  </footer>
+</body>
+</html
